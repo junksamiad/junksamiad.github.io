@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cucumber Recruitment - GEO/SEO Optimized Demo Pages</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f8fafb 0%, #E8F5E9 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 3rem;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo img {
+            height: 60px;
+        }
+        
+        h1 {
+            color: #1B5E20;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #546e7a;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .card {
+            background: #f8fafb;
+            border: 2px solid #E8F5E9;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(45, 127, 62, 0.15);
+            border-color: #2D7F3E;
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .card h2 {
+            color: #2D7F3E;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .card p {
+            color: #546e7a;
+            line-height: 1.6;
+        }
+        
+        .docs-link {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E8F5E9;
+        }
+        
+        .docs-link a {
+            color: #2D7F3E;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+        
+        .docs-link a:hover {
+            transform: translateX(5px);
+        }
+        
+        .features {
+            background: #E8F5E9;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .features h3 {
+            color: #1B5E20;
+            margin-bottom: 1rem;
+        }
+        
+        .features ul {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .features li {
+            padding-left: 1.5rem;
+            position: relative;
+            color: #546e7a;
+        }
+        
+        .features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2D7F3E;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="cucumber-logo.png" alt="Cucumber Recruitment">
+        </div>
+        
+        <h1>GEO/SEO Optimized Demo Pages</h1>
+        <p class="subtitle">
+            Showcasing Generative Engine Optimization (GEO) and traditional SEO techniques 
+            for Cucumber Recruitment's dual-audience approach
+        </p>
+        
+        <div class="features">
+            <h3>Key Optimizations Implemented:</h3>
+            <ul>
+                <li>Schema.org JSON-LD structured data</li>
+                <li>AI-optimized FAQ sections</li>
+                <li>Entity establishment for knowledge graphs</li>
+                <li>Semantic HTML5 markup</li>
+                <li>Mobile-first responsive design</li>
+                <li>E-E-A-T signals enhancement</li>
+                <li>Voice search optimization</li>
+                <li>Local SEO for UK market</li>
+            </ul>
+        </div>
+        
+        <div class="cards">
+            <a href="clients.html" class="card">
+                <div class="card-icon">🏥</div>
+                <h2>For Care Homes</h2>
+                <p>Optimized homepage for care homes seeking qualified temporary staff. Features staffing solutions, compliance guarantees, and 24/7 support.</p>
+            </a>
+            
+            <a href="workers.html" class="card">
+                <div class="card-icon">👥</div>
+                <h2>For Care Workers</h2>
+                <p>Optimized homepage for care professionals seeking flexible work. Highlights competitive pay, shift flexibility, and career opportunities.</p>
+            </a>
+        </div>
+        
+        <div class="docs-link">
+            <a href="GEO-SEO-Strategy-Document.md">
+                📄 View Complete GEO/SEO Strategy Document →
+            </a>
+        </div>
+    </div>
+</body>
+</html>

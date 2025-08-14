@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Home Staffing Agency UK | Temporary Care Staff Solutions | Cucumber Recruitment</title>
+    <meta name="description" content="Cucumber Recruitment provides qualified temporary care home staff across the UK. CQC-compliant care assistants, support workers & healthcare assistants available within 24 hours. Serving care homes since 2010.">
+    
+    <!-- Schema.org Structured Data for GEO/AI Optimization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EmploymentAgency",
+          "@id": "https://www.cucumber-recruitment.co.uk/#organization",
+          "name": "Cucumber Recruitment",
+          "alternateName": "Cucumber Care Home Staffing",
+          "description": "Specialist temporary care home staffing agency providing CQC-compliant care assistants and support workers across the UK",
+          "url": "https://www.cucumber-recruitment.co.uk",
+          "foundingDate": "2010",
+          "areaServed": "GB",
+          "telephone": "+44 161 509 6097",
+          "knowsAbout": ["Care Home Staffing", "Temporary Care Staff", "Care Assistant Recruitment", "Support Worker Agency"]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #fff;
+        }
+
+        /* Professional Header */
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e1e8ed;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar {
+            background: #2D7F3E;
+            color: white;
+            padding: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #2D7F3E;
+        }
+
+        .logo img {
+            height: 45px;
+            margin-right: 0.75rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #2D7F3E;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-outline {
+            padding: 0.625rem 1.25rem;
+            border: 2px solid #2D7F3E;
+            color: #2D7F3E;
+            background: transparent;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-outline:hover {
+            background: #2D7F3E;
+            color: white;
+        }
+
+        .btn-solid {
+            padding: 0.625rem 1.25rem;
+            background: #2D7F3E;
+            color: white;
+            border: 2px solid #2D7F3E;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-solid:hover {
+            background: #245F31;
+            border-color: #245F31;
+        }
+
+        /* Hero Section - Professional */
+        .hero {
+            background: #f8fafb;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            min-height: 600px;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-content h1 {
+            font-size: 2.75rem;
+            color: #1B5E20;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.25rem;
+            color: #546e7a;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .hero-image {
+            position: relative;
+            height: 500px;
+            background: url('care-assistant-hero.jpg') center/cover;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(45, 127, 62, 0.1));
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .stat-item {
+            border-left: 3px solid #2D7F3E;
+            padding-left: 1rem;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2D7F3E;
+            display: block;
+        }
+
+        .stat-label {
+            color: #546e7a;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            color: #1B5E20;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #546e7a;
+            margin-bottom: 3rem;
+            max-width: 700px;
+        }
+
+        /* Service Cards - Professional */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 2.5rem;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: #E8F5E9;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-card p {
+            color: #546e7a;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+        }
+
+        .service-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.75rem;
+            position: relative;
+            color: #546e7a;
+        }
+
+        .service-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2D7F3E;
+            font-weight: bold;
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: #f8fafb;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 1024px) {
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .trust-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-icon {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .trust-item h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .trust-item p {
+            color: #546e7a;
+            line-height: 1.6;
+        }
+
+        /* Process Section */
+        .process-section {
+            background: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        @media (max-width: 1024px) {
+            .process-steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #2D7F3E;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .process-step h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #2D7F3E 0%, #1B5E20 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta-section h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: #2D7F3E;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: #2D7F3E;
+        }
+
+        /* Footer - Professional */
+        footer {
+            background: #1B5E20;
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            padding: 0.5rem 0;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                height: 300px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <span>BOOK STAFF TODAY</span>
+            <div>
+                <a href="tel:01615096097">📞 0161 509 6097</a>
+                <a href="mailto:info@cucumber-recruitment.com">✉ info@cucumber-recruitment.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="cucumber-logo.png" alt="Cucumber Recruitment" style="height: 45px;">
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#staffing">Staffing</a></li>
+                <li><a href="#coverage">Coverage</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="https://portal.easyrecruit.ai/" class="btn-outline">Client Login</a>
+                <a href="#contact" class="btn-solid">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Connecting Care, Building Careers</h1>
+                <p class="subtitle">We are a leading care home staffing agency specialising in providing quick, efficient cover for the healthcare sector. Not a nursing agency – we're care home specialists.</p>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">5,000+</span>
+                        <span class="stat-label">Screened Professionals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24hr</span>
+                        <span class="stat-label">Emergency Response</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">CQC Compliant</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">14+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#book" class="btn-solid" style="padding: 1rem 2rem; font-size: 1.1rem;">Book Staff</a>
+                    <a href="#opportunities" class="btn-outline" style="padding: 1rem 2rem; font-size: 1.1rem;">Live Opportunities</a>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Staffing Solutions</h2>
+            <p class="section-subtitle">Comprehensive care home staffing services tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚨</div>
+                    <h3>Emergency Cover</h3>
+                    <p>Rapid response staffing solutions when you need them most</p>
+                    <ul>
+                        <li>24-hour emergency hotline</li>
+                        <li>Same-day placements</li>
+                        <li>Weekend and night coverage</li>
+                        <li>Pre-screened, ready staff</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Long-term Partnerships</h3>
+                    <p>Build consistent, reliable staffing solutions</p>
+                    <ul>
+                        <li>Block booking arrangements</li>
+                        <li>Dedicated account management</li>
+                        <li>Consistent staff allocation</li>
+                        <li>Volume-based pricing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Permanent Recruitment</h3>
+                    <p>Find the perfect permanent team members</p>
+                    <ul>
+                        <li>Targeted recruitment campaigns</li>
+                        <li>Comprehensive vetting process</li>
+                        <li>Replacement guarantees</li>
+                        <li>Onboarding support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section" style="position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; right: 0; width: 40%; height: 100%; background: url('elderly-care-hands.jpg') center/cover; opacity: 0.1;"></div>
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2>Why Choose Cucumber</h2>
+            <p class="section-subtitle">Industry-leading standards and uncompromising quality</p>
+            
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">✅</div>
+                    <h3>CQC Compliance</h3>
+                    <p>All staff meet CQC requirements with verified training in mandatory subjects</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">🔍</div>
+                    <h3>Rigorous Vetting</h3>
+                    <p>Enhanced DBS checks, reference verification, and competency assessments</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">🏥</div>
+                    <h3>Specialist Expertise</h3>
+                    <p>Staff experienced in dementia, learning disabilities, and complex care</p>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">📞</div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock support for emergencies and shift management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <h2>How We Work</h2>
+            <p class="section-subtitle">Simple, efficient process to meet your staffing needs</p>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Contact Us</h3>
+                    <p>Call our 24/7 hotline or submit an online request</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Requirements Review</h3>
+                    <p>We assess your specific needs and timing</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Staff Matching</h3>
+                    <p>We identify the perfect candidates from our pool</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Placement</h3>
+                    <p>Staff arrive on-site, fully briefed and ready</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Let Cucumber Fix Your Staffing Needs</h2>
+        <p>Request a consultation and let's make your staffing solutions stronger</p>
+        
+        <div class="cta-buttons">
+            <a href="tel:01615096097" class="btn-white">📞 Call Now: 0161 509 6097</a>
+            <a href="#consultation" class="btn-outline-white">Request Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cucumber Recruitment</h3>
+                <p>At Cucumber, we are committed to providing the highest level of professional healthcare possible. We value all our staff and invest heavily in continuous support, training, and professional development.</p>
+                <br>
+                <p><strong>England Head Office</strong><br>
+                Kimada House, 442 Flixton Road<br>
+                Urmston, Manchester, M41 6QT<br>
+                📞 0161 509 6097</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Healthcare Staffing</h3>
+                <ul>
+                    <li><a href="/staffing">Staffing Solutions</a></li>
+                    <li><a href="/specialist-care">Specialist Care</a></li>
+                    <li><a href="/temporary-staff">Temporary Staff</a></li>
+                    <li><a href="/healthcare-assistants">Healthcare Assistants</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/resources">Resources</a></li>
+                    <li><a href="https://www.mycucumber.co.uk/">Staff Portal</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>📞 To Join: 0161 814 9407</li>
+                    <li>📧 info@cucumber-recruitment.com</li>
+                    <li>📍 Scotland: 0141 673 5018</li>
+                    <li>272 Bath St, Glasgow, G2 4JR</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cucumber Recruitment Ltd. All rights reserved. Company Registration No. 12345678</p>
+        </div>
+    </footer>
+</body>
+</html>
