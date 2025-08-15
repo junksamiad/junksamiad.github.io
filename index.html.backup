@@ -161,46 +161,37 @@
         </p>
         
         <div class="features">
-            <h3>🚀 Advanced GEO Techniques Implemented:</h3>
+            <h3>Key Optimizations Implemented:</h3>
             <ul>
-                <li>LLMs.txt Protocol for AI crawlers</li>
-                <li>Voice search optimization (29-word queries)</li>
-                <li>Interactive calculators with semantic markup</li>
-                <li>Knowledge graph entity relationships</li>
-                <li>Multi-modal content optimization</li>
-                <li>Advanced schema.org structured data</li>
-                <li>AI citation network optimization</li>
-                <li>Cross-platform authority building</li>
+                <li>Schema.org JSON-LD structured data</li>
+                <li>AI-optimized FAQ sections</li>
+                <li>Entity establishment for knowledge graphs</li>
+                <li>Semantic HTML5 markup</li>
+                <li>Mobile-first responsive design</li>
+                <li>E-E-A-T signals enhancement</li>
+                <li>Voice search optimization</li>
+                <li>Local SEO for UK market</li>
             </ul>
         </div>
         
         <div class="cards">
-            <a href="clients-advanced.html" class="card">
+            <a href="clients.html" class="card">
                 <div class="card-icon">🏥</div>
-                <h2>For Care Homes (Advanced)</h2>
-                <p>Advanced GEO-optimized homepage with interactive cost calculator, voice search optimization, and 2-hour emergency response features.</p>
+                <h2>For Care Homes</h2>
+                <p>Optimized homepage for care homes seeking qualified temporary staff. Features staffing solutions, compliance guarantees, and 24/7 support.</p>
             </a>
             
-            <a href="workers-advanced.html" class="card">
+            <a href="workers.html" class="card">
                 <div class="card-icon">👥</div>
-                <h2>For Care Workers (Advanced)</h2>
-                <p>Advanced homepage with interactive shift planner, salary calculator, and complete flexibility features. Choose your shifts, track earnings.</p>
-            </a>
-            
-            <a href="strategy.html" class="card">
-                <div class="card-icon">📄</div>
-                <h2>Strategy Document</h2>
-                <p>Complete GEO/SEO optimization strategy with advanced techniques, LLMs.txt protocol, and cutting-edge AI optimization methods.</p>
+                <h2>For Care Workers</h2>
+                <p>Optimized homepage for care professionals seeking flexible work. Highlights competitive pay, shift flexibility, and career opportunities.</p>
             </a>
         </div>
         
-        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #E8F5E9;">
-            <h3 style="color: #2D7F3E; margin-bottom: 1rem;">Basic Versions Also Available:</h3>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="clients.html" style="color: #546e7a; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #e1e8ed; border-radius: 4px; transition: all 0.3s;">Basic Care Homes</a>
-                <a href="workers.html" style="color: #546e7a; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #e1e8ed; border-radius: 4px; transition: all 0.3s;">Basic Workers</a>
-                <a href="llms.txt" style="color: #546e7a; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #e1e8ed; border-radius: 4px; transition: all 0.3s;">LLMs.txt Protocol</a>
-            </div>
+        <div class="docs-link">
+            <a href="strategy.html">
+                📄 View Complete GEO/SEO Strategy Document →
+            </a>
         </div>
     </div>
 </body>
